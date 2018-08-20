@@ -1,6 +1,6 @@
 <template lang="pug">
   .main-wrapper
-    v-header
+    vi-header
     .content-wrapper
       modules
       div(v-if="load")
@@ -24,7 +24,7 @@ import shop_list from "@/components/shops.vue";
 
 @Component({
   components: {
-    "v-header": header,
+    "vi-header": header,
     modules,
     headline,
     board,

@@ -8,22 +8,21 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import Component from "vue-class-component";
-import "swiper/dist/css/swiper.css";
-import { swiper, swiperSlide } from "vue-awesome-swiper";
-import { State, Action } from "vuex-class";
+import Vue from 'vue';
+import Component from 'vue-class-component';
+import 'swiper/dist/css/swiper.css';
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
+import { State, Action } from 'vuex-class';
 
 @Component({
-  name: "modules",
+  name: 'modules',
   components: { swiper, swiperSlide }
 })
 export default class modules extends Vue {
   @State modules: StoreState.module[];
-
   private swiperOption: Object = {
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true
     }
   };
